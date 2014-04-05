@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+	<style>
+		#div1{width:100px; height:100px; background:red; font-size:14px;}
+		
+	</style>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>HTML</title>
+		<meta name="author" content="xl" />
+		<!-- Date: 2014-03-19 -->
+		<script type="text/javascript">
+			function getStyle(obj,attr){
+			
+				if(obj.currentStyle){
+				
+				return obj.currentStyle[attr];
+			}
+				else{
+					return getComputedStyle(obj,false)[attr];
+					}
+				
+			} 
+			 
+			window.onload=function(){
+				var oDiv=document.getElementById('div1');
+				
+				alert(getStyle(oDiv,'fontSize')); 
+					
+					
+					
+					}
+				
+				
+	
+			
+		</script>
+	</head>
+	
+	<body>
+		<div id="div1">
+			
+			
+		</div>
+
+	</body>
+</html>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<style type="text/css">
+		#div1{height:100px; width:100px; background:red;}
+			
+		</style>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title>HTML</title>
+       <script type="text/javascript">
+       	function css(){
+       		if(arguments.length==2){
+       			return arguments[0].style[arguments[1]];
+       			
+       			
+       		}
+       		else if(arguments.length==3){
+       			
+       			arguments[0].style[arguments[1]]=arguments[2];
+       			
+       		}
+       		
+       		
+       		
+       	}
+       	window.onload=function(){
+       		var oDiv=document.getElementById('div1');
+       		var oBtn=document.getElementById('btn1')
+       		
+       		oBtn.onclick=function(){
+       			
+       			
+       			//css(oDiv,'background','green');
+       			alert(css(oDiv,'width'))
+       			
+       		}
+       						
+       		
+       		
+       	}
+       </script>
+	</head>
+
+	<body>
+		<input id="btn1" type="button" value="样式"/>
+		<div id="div1">
+		  
+		</div》
+
+	</body>
+</html>
